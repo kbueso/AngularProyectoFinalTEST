@@ -1,0 +1,9 @@
+﻿<h3 class="card-header">Verify Email</h3>
+<div class="card-body">
+    <div *ngIf="emailStatus == EmailStatus.Verifying">
+        Verifying...
+    </div>
+    <div *ngIf="emailStatus == EmailStatus.Failed">
+        Verificación fallida, tambien puede verificar su cuenta usando <a routerLink="forgot-password">página de </a> Olvidó Contraseña.
+    </div>
+</div>
